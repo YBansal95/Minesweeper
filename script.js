@@ -1,3 +1,20 @@
+// for loader (instructions)
+const loader = document.querySelector('.loader')
+const main = document.querySelector('.main')
+
+function init() {
+    setTimeout(() => {
+        setTimeout(() => (loader.style.opacity = 0), 50)
+        loader.style.display = 'none'
+
+        main.style.display = 'block'
+        setTimeout(() => (main.style.opacity = 1), 50)
+    }, 5000)
+}
+
+init()
+
+
 const grid = document.querySelector('.grid')
 const flagsLeft = document.querySelector('#flags-left')
 const result = document.querySelector('#result')

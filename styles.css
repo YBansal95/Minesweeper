@@ -21,6 +21,19 @@ h2 {
     font-family: 'Roboto Mono', monospace;
 }
 
+.loader p {
+    font-size: 18px;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.main {
+    opacity: 0;
+    display: none;
+    transition: opacity 1s ease-in;
+}
+
 .grid {
     height: 420px;
     width: 420px;
